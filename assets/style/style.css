@@ -1,0 +1,113 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #262626;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+	margin-bottom: 10px; /* Espacement entre chaque élément de la liste */
+}
+
+main {
+    padding: 20px;
+	margin-left: 200px; /* Marge à gauche pour déplacer le contenu principal vers la droite */
+}
+
+section {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #262626;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* CSS pour redimensionner et positionner l'image et l'en-tête */
+header {
+    background-color: #262626;
+    color: #ffffff;
+    padding: 20px;
+    text-align: left; /* Alignement du texte à gauche */
+    display: flex; /* Utilisation de flexbox pour aligner les éléments */
+    align-items:center; /* Aligner les éléments verticalement */
+	justify-content: left;
+}
+
+header img {
+    width: 20%; /* Largeur de l'image */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+    margin-right: 20px; /* Marge à droite pour l'espace */
+}
+
+header h1 {
+    font-size: 24px; /* Taille de la police pour l'en-tête */
+    margin: 0; /* Supprimer les marges pour l'en-tête */
+}
